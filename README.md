@@ -77,3 +77,7 @@ cp .env.example .env.local
 
 - `NEXT_PUBLIC_*` — valores seguros expostos ao cliente
 - Segredos (DB, API keys) — apenas em Server Actions ou Route Handlers
+
+## Autora
+
+**Mariana Manzato Petrolini**

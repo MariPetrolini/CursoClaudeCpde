@@ -1,5 +1,25 @@
 {
-  "enabledPlugins": {
-    "chrome-devtools-mcp@claude-plugins-official": true
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/init.js\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/session-stop.js"
+          }
+        ]
+      }
+    ]
   }
 }

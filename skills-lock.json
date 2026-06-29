@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "react-best-practices": {
+      "source": "akillness/oh-my-skills",
+      "sourceType": "github",
+      "skillPath": ".agent-skills/react-best-practices/SKILL.md",
+      "computedHash": "9739504c286cd0e76628e17a537f02b1d63941d9204fe85b4e087ffb6446ec66"
+    },
+    "vercel-deploy": {
+      "source": "akillness/oh-my-skills",
+      "sourceType": "github",
+      "skillPath": ".agent-skills/vercel-deploy/SKILL.md",
+      "computedHash": "7b8e395543bc6dbd669b827ccf8cbf91512d2bea7b64c7132b86e5fe55d96eb7"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
+    }
+  }
+}

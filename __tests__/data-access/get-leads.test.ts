@@ -4,10 +4,6 @@ const mockRange = jest.fn()
 const mockOrder = jest.fn()
 const mockSelect = jest.fn()
 const mockFrom = jest.fn()
-const mockEqStatus = jest.fn()
-const mockEqService = jest.fn()
-const mockGte = jest.fn()
-const mockLte = jest.fn()
 
 jest.mock('@/lib/supabase/server', () => ({
   createClient: jest.fn(() => Promise.resolve({ from: mockFrom })),

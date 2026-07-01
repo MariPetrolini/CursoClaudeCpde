@@ -30,6 +30,7 @@ export function Hero({ onBookingClick }: HeroProps) {
               <Button
                 variant="outline"
                 size="lg"
+                nativeButton={false}
                 className="border-line text-ink hover:bg-surface transition-colors px-8"
                 render={<a href="https://wa.me/5511988775522" target="_blank" rel="noopener noreferrer" />}
               >

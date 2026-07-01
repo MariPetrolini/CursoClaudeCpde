@@ -35,6 +35,7 @@ export function BoutiqueShowcase() {
         <div className="text-center">
           <Button
             variant="outline"
+            nativeButton={false}
             className="border-line text-ink hover:bg-surface transition-colors"
             render={<a href="#contato" />}
           >

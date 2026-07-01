@@ -18,7 +18,7 @@ export function Testimonials() {
                     <span key={i} className="text-brand-accent text-sm">★</span>
                   ))}
                 </div>
-                <p className="font-sans text-sm text-ink leading-relaxed">"{t.text}"</p>
+                <p className="font-sans text-sm text-ink leading-relaxed">&ldquo;{t.text}&rdquo;</p>
                 <div>
                   <p className="font-display text-sm font-semibold text-ink">{t.name}</p>
                   <p className="font-sans text-xs text-ink-muted">{t.pet}</p>

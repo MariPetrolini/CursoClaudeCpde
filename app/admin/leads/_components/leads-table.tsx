@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { Lead, SERVICE_LABELS, STATUS_LABELS } from '@/types/database'
 import { format } from 'date-fns'
@@ -49,7 +50,7 @@ export function LeadsTable({ leads }: { leads: Lead[] }) {
                 {format(new Date(lead.created_at), 'dd/MM/yy HH:mm', { locale: ptBR })}
               </td>
               <td className="px-4 py-3">
-                <a href={`/admin/leads/${lead.id}`} className="text-xs text-brand-primary-deep hover:underline">Ver</a>
+                <Link href={`/admin/leads/${lead.id}`} className="text-xs text-brand-primary-deep hover:underline">Ver</Link>
               </td>
             </tr>
           ))}

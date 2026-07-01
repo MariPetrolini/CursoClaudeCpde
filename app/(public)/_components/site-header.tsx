@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
 import { HeaderMobileMenu } from './header-mobile-menu'
@@ -17,10 +18,10 @@ export function SiteHeader({ onBookingClick }: SiteHeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-bg-base/95 backdrop-blur-sm border-b border-line">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="/" className="flex flex-col leading-none">
+        <Link href="/" className="flex flex-col leading-none">
           <span className="font-display text-xl font-semibold text-ink">Aurè</span>
           <span className="text-xs font-sans text-ink-muted tracking-widest uppercase">Pet Atelier</span>
-        </a>
+        </Link>
 
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="gap-1">

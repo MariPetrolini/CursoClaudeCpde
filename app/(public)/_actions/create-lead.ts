@@ -42,7 +42,8 @@ export async function createLead(input: CreateLeadInput): Promise<CreateLeadResu
     })
     if (error) throw error
     return { success: true, message: 'Agendamento solicitado! Nossa equipe entrará em contato em até 24h.' }
-  } catch {
+  } catch (err) {
+    console.error('[createLead] Supabase error:', err)
     return { success: false, message: 'Não foi possível enviar. Tente pelo WhatsApp: (11) 98877-5522.' }
   }
 }
